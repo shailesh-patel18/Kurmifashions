@@ -1,0 +1,19 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="800" fill="#F6F1E7" />
+    <rect x="30" y="30" width="740" height="740" rx="20" fill="#FFFFFF" stroke="#E3DCCB" stroke-width="3" />
+    <rect x="50" y="50" width="700" height="700" rx="14" fill="none" stroke="#D2693A" stroke-width="1.5" stroke-dasharray="8 6" />
+    
+    <text x="400" y="110" text-anchor="middle" font-family="serif" font-size="34" font-weight="bold" fill="#1F3D2B">Mountain Hare</text>
+    <text x="400" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-style="italic" fill="#5E665C">Lepus timidus</text>
+
+    <!-- Art Centerpiece -->
+    <g transform="translate(150, 180)">
+      <circle cx="250" cy="220" r="180" fill="#C05C30" opacity="0.1" />
+      <circle cx="250" cy="220" r="130" fill="#F6F1E7" opacity="0.2" />
+      <path d="M150 280 C200 160 300 160 350 280 C320 330 180 330 150 280 Z" fill="#C05C30" />
+      <circle cx="250" cy="210" r="50" fill="#F6F1E7" />
+    </g>
+
+    <text x="400" y="690" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#1B1F1A" letter-spacing="4">KURMI BOTANICAL FIELD ARCHIVE • NO. 01</text>
+    <text x="400" y="715" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#D2693A">ORIGINAL VECTOR ARTWORK • ALL RIGHTS RESERVED</text>
+  </svg>

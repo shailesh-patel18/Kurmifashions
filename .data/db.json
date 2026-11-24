@@ -1,0 +1,35 @@
+{
+  "inquiries": [
+    {
+      "id": "inq_1795432849796_fdh2c",
+      "created_at": "2026-11-23T11:20:49.796Z",
+      "name": "Aarav Sharma",
+      "whatsapp": "9876543210",
+      "email": "aarav@example.com",
+      "city": "Bengaluru",
+      "preferred_contact": "whatsapp",
+      "message": "Love the fox tee!",
+      "consent_at": "2026-11-23T11:20:49.796Z",
+      "consent_text_version": "v1.0-dpdp-compliant",
+      "referral_code": "KURMI-3705EB",
+      "status": "new",
+      "items": [
+        {
+          "productId": "fox-in-the-pines",
+          "size": "M",
+          "quantity": 1
+        }
+      ],
+      "supporterNumber": 1
+    }
+  ],
+  "subscribers": [],
+  "votes": [
+    {
+      "id": "vote_1795432849806",
+      "candidate_id": "deer-spotted",
+      "device_hash": "test_dev_hash_12345",
+      "created_at": "2026-11-23T11:20:49.805Z"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "deer-spotted",
+    "name": "Chital Axis Deer",
+    "species": "Axis axis (Spotted deer)",
+    "habitat": "Teak forest canopies & sun-dappled glades",
+    "story": "Graceful antlers caught against golden afternoon dust and bamboo thickets.",
+    "expectedGarment": "T-shirt",
+    "palette": "Amber Ochre & Forest Green",
+    "image": "/images/vote-deer.jpg",
+    "votesCount": 142
+  },
+  {
+    "id": "kingfisher-river",
+    "name": "Common Kingfisher",
+    "species": "Alcedo atthis (Common kingfisher)",
+    "habitat": "Clear riverbanks, mangrove creeks & fresh streams",
+    "story": "A brilliant sapphire dart plunging through glass-clear waters in an instant.",
+    "expectedGarment": "Linen Shirt",
+    "palette": "Cobalt Blue & Terracotta Bronze",
+    "image": "/images/vote-kingfisher.jpg",
+    "votesCount": 189
+  },
+  {
+    "id": "monstera-leopard",
+    "name": "Western Ghats Leopard",
+    "species": "Panthera pardus fusca",
+    "habitat": "Rainforest foliage & shola moss canopies",
+    "story": "Silent amber eyes peer from broad tropical leaves, calm yet commanding.",
+    "expectedGarment": "Camp Collar Shirt",
+    "palette": "Deep Emerald & Desert Khaki",
+    "image": "/images/vote-leopard.jpg",
+    "votesCount": 115
+  }
+]

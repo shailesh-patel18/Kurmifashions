@@ -1,0 +1,152 @@
+[
+  {
+    "id": "fox-in-the-pines",
+    "name": "Fox in the Pines",
+    "species": "Vulpes vulpes (Red fox)",
+    "habitat": "Himalayan pine forest & alpine foothills",
+    "story": "A quiet wanderer traversing sunlit pine needles at dawn, alert to every rustling twig.",
+    "gender": ["men", "women"],
+    "garment": "tshirt",
+    "fit": "regular",
+    "fabric": "100% combed cotton, 180 GSM bio-washed",
+    "colors": [
+      { "name": "Forest Pine", "hex": "#1F3D2B" },
+      { "name": "Sand Cream", "hex": "#EAE2D0" }
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "expectedPriceINR": 899,
+    "tag": "Most wanted",
+    "images": {
+      "flat": "/products/fox/flat.jpg",
+      "alt": "/products/fox/model.jpg",
+      "print": "/products/fox/print.jpg"
+    },
+    "altText": "Red fox resting amidst tall pine cones and Himalayan fir trees on a forest-green cotton tee",
+    "status": "concept"
+  },
+  {
+    "id": "night-owl",
+    "name": "Night Owl Vigil",
+    "species": "Tyto alba (Barn owl)",
+    "habitat": "Ancient oak groves & moonlight meadows",
+    "story": "Silent wings skimming through mist under a silver crescent moon.",
+    "gender": ["men", "women"],
+    "garment": "tshirt",
+    "fit": "oversized",
+    "fabric": "100% organic cotton, 200 GSM heavy-knit",
+    "colors": [
+      { "name": "Midnight Ink", "hex": "#121712" },
+      { "name": "Misty Sage", "hex": "#5E665C" }
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "expectedPriceINR": 949,
+    "tag": "Concept",
+    "images": {
+      "flat": "/products/owl/flat.jpg",
+      "alt": "/products/owl/model.jpg",
+      "print": "/products/owl/print.jpg"
+    },
+    "altText": "Stylized barn owl perched on an oak branch beneath a glowing moon on dark ink fabric",
+    "status": "concept"
+  },
+  {
+    "id": "humpback-drift",
+    "name": "Humpback Drift",
+    "species": "Megaptera novaeangliae (Humpback whale)",
+    "habitat": "Arabian Sea deep-water migratory corridor",
+    "story": "A rhythmic song echoing through sapphire ocean currents and kelp shallows.",
+    "gender": ["men", "women"],
+    "garment": "shirt",
+    "fit": "relaxed",
+    "fabric": "70% organic cotton, 30% linen, 160 GSM breathable weave",
+    "colors": [
+      { "name": "Ocean Deep", "hex": "#1A323F" },
+      { "name": "Salt Mist", "hex": "#F0EFEA" }
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "expectedPriceINR": 1499,
+    "tag": "Concept",
+    "images": {
+      "flat": "/products/whale/flat.jpg",
+      "alt": "/products/whale/model.jpg",
+      "print": "/products/whale/print.jpg"
+    },
+    "altText": "Graceful humpback whale gliding upward through ocean waves and bubbles on a linen-blend shirt",
+    "status": "concept"
+  },
+  {
+    "id": "mountain-hare",
+    "name": "Mountain Hare",
+    "species": "Lepus timidus (Mountain hare)",
+    "habitat": "Highland tundra & rocky birch slopes",
+    "story": "Gentle, watchful, camouflaged amongst wild moss and mountain lichen.",
+    "gender": ["men", "women"],
+    "garment": "tshirt",
+    "fit": "regular",
+    "fabric": "100% combed cotton, 180 GSM",
+    "colors": [
+      { "name": "Terracotta Earth", "hex": "#D2693A" },
+      { "name": "Raw Sand", "hex": "#EAE2D0" }
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "expectedPriceINR": 899,
+    "tag": "Most wanted",
+    "images": {
+      "flat": "/products/hare/flat.jpg",
+      "alt": "/products/hare/model.jpg",
+      "print": "/products/hare/print.jpg"
+    },
+    "altText": "Mountain hare alert among tundra berries and wild flora in layered paper-cut style",
+    "status": "concept"
+  },
+  {
+    "id": "midnight-moth",
+    "name": "Midnight Silk Moth",
+    "species": "Actias selene (Indian moon moth)",
+    "habitat": "Subtropical cloud forests & canopy hollows",
+    "story": "Emerald-winged nocturnal wanderer drawn only to the pale gleam of forest orchids.",
+    "gender": ["men", "women"],
+    "garment": "shirt",
+    "fit": "relaxed",
+    "fabric": "60% cotton, 40% linen, 155 GSM soft-washed",
+    "colors": [
+      { "name": "Forest Fern", "hex": "#243E2C" },
+      { "name": "Moonglow", "hex": "#EFE9DC" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "expectedPriceINR": 1549,
+    "tag": "Concept",
+    "images": {
+      "flat": "/products/moth/flat.jpg",
+      "alt": "/products/moth/model.jpg",
+      "print": "/products/moth/print.jpg"
+    },
+    "altText": "Indian moon moth with delicate swallowtail ribbons and fern leaves on a resort shirt",
+    "status": "concept"
+  },
+  {
+    "id": "tiger-lily",
+    "name": "Tiger Lily & Leopard",
+    "species": "Lilium lancifolium & Panthera pardus",
+    "habitat": "Western Ghats shola grasslands",
+    "story": "The golden grace of a leopard camouflaged against spotted tiger lily petals.",
+    "gender": ["men", "women"],
+    "garment": "tshirt",
+    "fit": "regular",
+    "fabric": "100% organic cotton, 190 GSM",
+    "colors": [
+      { "name": "Sun Ochre", "hex": "#C97A3E" },
+      { "name": "Wild Pine", "hex": "#1F3D2B" }
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "expectedPriceINR": 929,
+    "tag": "Concept",
+    "images": {
+      "flat": "/products/tigerlily/flat.jpg",
+      "alt": "/products/tigerlily/model.jpg",
+      "print": "/products/tigerlily/print.jpg"
+    },
+    "altText": "Botanical tiger lily petals framing an elusive Indian leopard silhouette on cotton",
+    "status": "concept"
+  }
+]

@@ -1,0 +1,51 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="teeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#1F3D2B" />
+        <stop offset="100%" stopColor="#000000" />
+      </linearGradient>
+      <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stopColor="#F6F1E7" />
+        <stop offset="100%" stopColor="#EDE6D6" />
+      </linearGradient>
+      <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="0" dy="25" stdDeviation="25" flood-color="#000000" flood-opacity="0.12" />
+      </filter>
+    </defs>
+    
+    <!-- Background Specimen Card -->
+    <rect width="800" height="1000" fill="url(#bgGrad)" />
+    
+    <!-- Botanical Dotted Specimen Border -->
+    <rect x="25" y="25" width="750" height="950" rx="16" fill="none" stroke="#D5CBB7" stroke-width="2" stroke-dasharray="6 6" />
+    <text x="50" y="70" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#7A8477" letter-spacing="3">KURMI FIELD SPECIMEN • VULPES VULPES</text>
+    <text x="750" y="70" text-anchor="end" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#D2693A">SAMPLE MOCKUP</text>
+
+    <!-- T-Shirt Silhouette with Natural Creases -->
+    <g filter="url(#shadow)" transform="translate(100, 110)">
+      <!-- Main Shirt Body -->
+      <path d="M190 60 C230 85 370 85 410 60 L570 160 L510 270 L440 230 L450 720 C450 740 430 750 410 750 L190 750 C170 750 150 740 150 720 L160 230 L90 270 L30 160 Z" fill="url(#teeGrad)" />
+      
+      <!-- Collar Band -->
+      <path d="M190 60 C240 120 360 120 410 60 C380 90 220 90 190 60 Z" fill="#000000" />
+      <path d="M210 70 C250 110 350 110 390 70" stroke="#6c8a78" stroke-width="2" fill="none" opacity="0.6" />
+
+      <!-- Inner Neck Tag -->
+      <rect x="270" y="80" width="60" height="40" rx="4" fill="#EAE2D0" opacity="0.9" />
+      <text x="300" y="98" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" fill="#1F3D2B">KURMI</text>
+      <text x="300" y="112" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#D2693A">100% COTTON</text>
+
+      <!-- Center Chest Placement Graphic -->
+      <g transform="translate(200, 220)">
+        <rect x="0" y="0" width="200" height="230" rx="14" fill="#4d6b59" opacity="0.4" />
+        <circle cx="100" cy="90" r="60" fill="#D2693A" opacity="0.25" />
+        <path d="M60 140 Q100 70 140 140" stroke="#D2693A" stroke-width="4" fill="none" stroke-linecap="round" />
+        <circle cx="100" cy="85" r="24" fill="#D2693A" opacity="0.8" />
+        <text x="100" y="180" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold" fill="#F6F1E7" letter-spacing="1">Fox in the Pines</text>
+        <text x="100" y="200" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#EAE2D0" letter-spacing="2">DEMAND VALIDATION</text>
+      </g>
+    </g>
+
+    <!-- Bottom Specimen Label -->
+    <text x="400" y="925" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="500" fill="#5E665C">180 GSM Bio-Washed Combed Cotton • Field Tested Fit</text>
+  </svg>

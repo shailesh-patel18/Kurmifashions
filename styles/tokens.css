@@ -1,0 +1,90 @@
+/* Design System Tokens for KURMI.FASHIONS */
+:root {
+  /* Light Theme */
+  --color-bg: #F6F1E7;
+  --color-surface: #FFFFFF;
+  --color-sand: #EAE2D0;
+  --color-forest: #1F3D2B;
+  --color-forest-light: #2D583F;
+  --color-forest-hover: #162E20;
+  --color-terracotta: #D2693A;
+  --color-terracotta-hover: #BC5A2F;
+  --color-terracotta-contrast: #B04E24;
+  --color-ink: #1B1F1A;
+  --color-ink-light: #323930;
+  --color-muted: #5E665C;
+  --color-line: #E3DCCB;
+
+  --grain-opacity: 0.035;
+}
+
+.dark {
+  /* Dark Theme (Moonlit Forest) */
+  --color-bg: #121712;
+  --color-surface: #1B221B;
+  --color-sand: #232C23;
+  --color-forest: #2E5A40;
+  --color-forest-light: #427E5B;
+  --color-forest-hover: #244833;
+  --color-terracotta: #E8855A;
+  --color-terracotta-hover: #F09873;
+  --color-terracotta-contrast: #F3A483;
+  --color-ink: #EEF0E8;
+  --color-ink-light: #D5D9CE;
+  --color-muted: #8E988A;
+  --color-line: #283328;
+
+  --grain-opacity: 0.045;
+}
+
+/* Base Body Setup */
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Subtle SVG Grain Overlay */
+.grain-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: var(--grain-opacity);
+}
+
+/* Reduced Motion Overrides */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom Interactive Cursor Styling */
+@media (hover: hover) and (pointer: fine) {
+  .custom-cursor {
+    pointer-events: none;
+    position: fixed;
+    z-index: 10000;
+    transition: transform 0.12s ease-out, width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Focus styles for WCAG AA */
+:focus-visible {
+  outline: 2px solid var(--color-terracotta);
+  outline-offset: 2px;
+}
