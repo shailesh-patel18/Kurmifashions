@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import { X, Sparkles, AlertCircle, ShoppingBag } from "lucide-react";
+import { X, Sparkles, AlertCircle, ShoppingBag, Users, Share2, Check } from "lucide-react";
 import { useKurmi } from "@/lib/context";
 import { Button } from "./Button";
 import { InterestItemRow } from "./InterestItemRow";
@@ -17,6 +17,21 @@ export function InterestDrawer() {
     removeFromInterestList,
     setIsInquiryModalOpen,
   } = useKurmi();
+
+  const [copiedGroupLink, setCopiedGroupLink] = React.useState(false);
+
+  const handleShareGroupLink = () => {
+    const encodedPicks = encodeURIComponent(
+      interestList.map((i) => `${i.productId}:${i.size}:${i.quantity}`).join(",")
+    );
+    const groupUrl = `${window.location.origin}?groupPicks=${encodedPicks}`;
+    navigator.clipboard.writeText(groupUrl);
+    setCopiedGroupLink(true);
+    setTimeout(() => setCopiedGroupLink(false), 2500);
+    if (typeof window !== "undefined" && navigator?.vibrate) {
+      navigator.vibrate(15);
+    }
+  };
 
   const closeBtnRef = useRef<HTMLButtonElement>(null);
   const products = productsData as Product[];
@@ -153,12 +168,28 @@ export function InterestDrawer() {
               size="lg"
               className="w-full shadow-md"
               onClick={() => {
+                if (typeof window !== "undefined" && navigator?.vibrate) {
+                  navigator.vibrate(15);
+                }
                 setIsDrawerOpen(false);
                 setIsInquiryModalOpen(true);
               }}
             >
               Send my inquiry ({totalQuantity} {totalQuantity === 1 ? "design" : "designs"})
             </Button>
+
+            {/* Point 5: Pledge with Friends Group Buying Link */}
+            <button
+              type="button"
+              onClick={handleShareGroupLink}
+              className="w-full h-10 px-4 rounded-full border border-line bg-sand/30 hover:bg-sand/60 text-scale-12 font-semibold text-ink flex items-center justify-center gap-2 transition-colors"
+            >
+              <Users className="w-4 h-4 text-terracotta" />
+              <span>
+                {copiedGroupLink ? "Group Session Link Copied!" : "Pledge with Friends (Shared Link)"}
+              </span>
+            </button>
+
             <p className="text-[11px] text-center text-muted">
               Takes 30 seconds • We will notify you when production begins
             </p>

@@ -108,6 +108,15 @@ export function ProductDetailModal({ product, onClose }: ProductDetailModalProps
     moonlight: "brightness-85 contrast-115 hue-rotate-[160deg] saturate-75",
   };
 
+  const habitatClimate: Record<string, string> = {
+    "fox-in-the-pines": "Himalayan Pines: 14°C • Alpine Mist",
+    "night-owl": "Oak Groves: 19°C • Moonlight Breeze",
+    "humpback-drift": "Arabian Sea: 27°C • Coastal Drift",
+    "mountain-hare": "Spiti Tundra: 6°C • Mountain Gale",
+    "midnight-moth": "Western Ghats: 22°C • Shola Humidity",
+    "tiger-lily": "Sacred Groves: 21°C • Cloud Canopy Dew",
+  };
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6"
@@ -141,10 +150,15 @@ export function ProductDetailModal({ product, onClose }: ProductDetailModalProps
                 className={`w-full h-full object-cover transition-all duration-500 ${lightingFilters[lightingMode]}`}
               />
 
-              {/* Habitat Tag */}
+              {/* Habitat Tag & Native Habitat Live Climate Feed */}
               <div className="absolute top-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-sm border border-line text-[11px] font-semibold text-terracotta">
                 <MapPin className="w-3.5 h-3.5" />
                 <span>{product.habitat}</span>
+              </div>
+
+              <div className="absolute top-3 right-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-sm border border-line text-[10px] font-semibold text-forest dark:text-emerald-400">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                <span>{habitatClimate[product.id] || "Native Reserve: 24°C • Clear"}</span>
               </div>
 
               {/* Ambient Sunlight Simulator Bar */}

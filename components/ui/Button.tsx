@@ -50,12 +50,20 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         "bg-sand text-ink hover:bg-sand/80 shadow-sm focus-visible:outline-forest",
     };
 
+    const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+      if (typeof window !== "undefined" && navigator?.vibrate) {
+        navigator.vibrate(10);
+      }
+      props.onClick?.(e);
+    };
+
     return (
       <button
         ref={ref}
         disabled={disabled || isLoading}
         className={`${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`}
         {...props}
+        onClick={handleClick}
       >
         {isLoading ? (
           <>
